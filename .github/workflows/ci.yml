@@ -35,4 +35,17 @@ jobs:
           go version
           go get -u golang.org/x/lint/golint
           
+      - name: Go vet and Lint
+        run: |
+          go vet .
+          golint .
+      
+      - name: Go build
+        run: go build .
+        
+     
+        
+
+        
+          
         
