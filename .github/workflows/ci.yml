@@ -45,7 +45,9 @@ jobs:
 
       - name: Go Run
         run: ./hello
-        
+      
+      - name: Go test
+        run: go test 
      
         
 
