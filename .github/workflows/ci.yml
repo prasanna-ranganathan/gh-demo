@@ -41,7 +41,10 @@ jobs:
           golint .
       
       - name: Go build
-        run: go build .
+        run: go build -o hello . 
+
+      - name: Go Run
+        run: ./hello
         
      
         
